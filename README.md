@@ -8,11 +8,14 @@ To run it perfectly, you will need (recommend using Ananconda to set up environm
 
 # 1. Download and preprocess 
 
+```Bash
 cd data_process
+```
 
 Download the data and the resources for preprocess
-[1] python download.py
-
+```Python
+python download.py
+```
 Preprocess for SNLI dataset
 [2] python preprocess_data_snli.py
 
