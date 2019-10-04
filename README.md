@@ -38,13 +38,10 @@ python process_data_scitail.py
 # 2. Train KEIM
 Hyper-parameters are set in configure file in ./config/xxx.sample.config
 
-```Bash
-cd src
-```
-
 Training process for SNLI dataset
 
 ```Bash
+cd src
 python Main.py --config_path ../configs/snli.sample.config
 ```
 
