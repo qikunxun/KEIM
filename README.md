@@ -13,36 +13,58 @@ cd data_process
 ```
 
 Download the data and the resources for preprocess
-```Python
+
+```Bash
 python download.py
 ```
 Preprocess for SNLI dataset
-[2] python preprocess_data_snli.py
+
+```Bash
+python preprocess_data_snli.py
+```
 
 Preprocess for MultiNLI dataset
-[3] python preprocess_data_multinli.py
+
+```Bash
+python preprocess_data_multinli.py
+```
 
 Preprocess for SciTail dataset
-[4] python process_data_scitail.py
+
+```Bash
+python process_data_scitail.py
+```
 
 # 2. Train KEIM
 Hyper-parameters are set in configure file in ./config/xxx.sample.config
 
+```Bash
 cd src
+```
 
 Training process for SNLI dataset
+
+```Bash
 python Main.py --config_path ../configs/snli.sample.config
+```
 
 Training process for MultiNLI dataset
+
+```Bash
 python Main.py --config_path ../configs/multinli.sample.config
+```
 
 Training process for SciTail dataset
+
+```Bash
 python Main.py --config_path ../configs/scitail.sample.config
+```
 
 The model and results are saved in $model_dir$.
 
 # 3. Evaluation
 
+```Bash
 cd src
-
 python Evaluation.py --model_prefix your_model --in_path The path to the test file.
+```
