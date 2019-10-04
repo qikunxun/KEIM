@@ -1,47 +1,44 @@
-# KEIM
-
 # Natural Language Inference Enhanced by Knowledge Graph Embedding (KEIM)
 
-## Dependencies
+# Dependencies
 To run it perfectly, you will need (recommend using Ananconda to set up environment):
 * Python 3.5 or 3.6
 * Tensorflow 1.10.0
 * Java >= 1.6
 
-1. Download and preprocess 
+# 1. Download and preprocess 
 
 cd data_process
 
-# Download the data and the resources for preprocess
+Download the data and the resources for preprocess
 [1] python download.py
 
-# Preprocess for SNLI dataset
+Preprocess for SNLI dataset
 [2] python preprocess_data_snli.py
 
-# Preprocess for MultiNLI dataset
+Preprocess for MultiNLI dataset
 [3] python preprocess_data_multinli.py
 
-# Preprocess for SciTail dataset
+Preprocess for SciTail dataset
 [4] python process_data_scitail.py
 
-
-2. Train KEIM
-# Hyper-parameters are set in configure file in ./config/xxx.sample.config
+# 2. Train KEIM
+Hyper-parameters are set in configure file in ./config/xxx.sample.config
 
 cd src
 
-#Training process for SNLI dataset
+Training process for SNLI dataset
 python Main.py --config_path ../configs/snli.sample.config
 
-#Training process for MultiNLI dataset
+Training process for MultiNLI dataset
 python Main.py --config_path ../configs/multinli.sample.config
 
-#Training process for SciTail dataset
+Training process for SciTail dataset
 python Main.py --config_path ../configs/scitail.sample.config
 
 The model and results are saved in $model_dir$.
 
-3. Evaluation
+# 3. Evaluation
 
 cd src
 
