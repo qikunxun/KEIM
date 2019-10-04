@@ -1,7 +1,7 @@
 # Natural Language Inference Enhanced by Knowledge Graph Embedding (KEIM)
 
 # Dependencies
-To run it perfectly, you will need (recommend using Ananconda to set up environment):
+To run it perfectly, you will need (recommend using Anaconda to set up environment):
 * Python 3.5 or 3.6
 * Tensorflow 1.10.0
 * Java >= 1.6
