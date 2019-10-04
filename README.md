@@ -12,7 +12,13 @@ To run it perfectly, you will need (recommend using Ananconda to set up environm
 cd data_process
 ```
 
-Download the data and the resources for preprocess
+Download the data and the resources for preprocess:
+* SNLI dataset
+* MultiNLI dataset
+* SciTail dataset
+* GloVe embedding (300D)
+* Wordnet 3.0
+* CoreNLP
 
 ```Bash
 python download.py
